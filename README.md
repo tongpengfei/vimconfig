@@ -7,7 +7,7 @@
 	出喜欢的c,cpp代码的颜色,有兴趣的可以看vimcfg/.vim/syntax/tpf.vim 和vimcfg/.vim/color/c.vim文件一个是
 	语法匹配,一个是颜色定义,这个是2010年的时候配的,长期不看,其实我也不怎么记得了,呵呵,只是留下了这个配置. 
 	
-	![vim_color](res/vim_color.png)
+![vim_color](res/vim_color.png)
 
 ## 安装vim
     * ubuntu可以用下面这行命令安装
@@ -54,6 +54,7 @@ bash$ vim .
 	  一打开文件的时候,是正常模式,这个时候可以用hjkl在代码间来回移动,下面是我常用的移动光标指令
 	  * h 对应 左, 相当于 方向键的左
 ![h](res/h.gif)
+
 	  * l 对应 右, 相当于 方向键的右
 	  * j 对应 下, 相当于 方向键的下
 	  * k 对应 上, 相当于 方向键的上
