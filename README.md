@@ -7,6 +7,7 @@
 	出喜欢的c,cpp代码的颜色,有兴趣的可以看vimcfg/.vim/syntax/tpf.vim 和vimcfg/.vim/color/c.vim文件一个是
 	语法匹配,一个是颜色定义,这个是2010年的时候配的,长期不看,其实我也不怎么记得了,呵呵,只是留下了这个配置. 
 	
+	最终的配色就是这样:
 ![vim_color](res/vim_color.png)
 
 ## 安装vim
