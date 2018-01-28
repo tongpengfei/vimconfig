@@ -19,7 +19,7 @@
 	怎么记得了.
 	
 	最终的配色就是这样:
-![vim_color](https://github.com/tongpengfei/vimconfig/raw/master/res/vim_color.png)
+![vim_color](res/vim_color.png)
 
 ## 安装vim
 * ubuntu可以用下面这行命令安装
@@ -43,7 +43,7 @@ bash$ cp -rf vimcfg/.* ~/
 ```c
 bash$ vim 
 ```
-![open_empty](https://github.com/tongpengfei/vimconfig/raw/master/res/open_empty.gif)
+![open_empty](res/open_empty.gif)
 
 * 退出vim
 ```c
@@ -54,7 +54,7 @@ bash$ vim
 ```c
 bash$ vim main.cpp
 ```
-![open](https://github.com/tongpengfei/vimconfig/raw/master/res/open_close.gif)
+![open](res/open_close.gif)
 
 * 还可以用vim打开一个目录,比如下面我打开当前目录,便会列出该目录下的所有文件. 使用j,k可以上下移动光标,选中想进入的文件后,按回车便可进入该文件,一般在工程
 不熟的时候可以用这个命令在多个文件中切换,如果是自己写的项目,大多数文件名都
@@ -62,55 +62,55 @@ bash$ vim main.cpp
 ```c
 bash$ vim .
 ```
-![open_dir](https://github.com/tongpengfei/vimconfig/raw/master/res/open_dir.gif)
+![open_dir](res/open_dir.gif)
 
 * 移动光标,是vim里最常用的指令,使用vim的过程,在我看来基本上就是在移动光标,可以用hjkl也可以用方向键,但是强烈建议一开始就用hjkl来控制方向,这样可以极大的提高代码编辑速度,因为手可以不用在字母与方向键之间来回切换.一打开文件的时候,是正常模式,这个时候可以用hjkl在代码间来回移动,下面列出常用的移动光标指令
 
   一共有12种:
 
   * h 对应 左, 相当于 方向键的左
-![h](https://github.com/tongpengfei/vimconfig/raw/master/res/h.gif)
+![h](res/h.gif)
 
   * l 对应 右, 相当于 方向键的右
-![l](https://github.com/tongpengfei/vimconfig/raw/master/res/l.gif)
+![l](res/l.gif)
 
   * j 对应 下, 相当于 方向键的下
   * k 对应 上, 相当于 方向键的上
-![jk](https://github.com/tongpengfei/vimconfig/raw/master/res/jk.gif)
+![jk](res/jk.gif)
 
   * 0 (数字0)跳到一行的开头
   * $ 跳到一行的结尾
-![line_start_end](https://github.com/tongpengfei/vimconfig/raw/master/res/line_start_end.gif)
+![line_start_end](res/line_start_end.gif)
 
   * e 跳到一个单词的结尾
-![e](https://github.com/tongpengfei/vimconfig/raw/master/res/e.gif)
+![e](res/e.gif)
 
   * b 跳到一个单词的开头
-![b](https://github.com/tongpengfei/vimconfig/raw/master/res/b.gif)
+![b](res/b.gif)
 
   * gg 跳到文件开头
   * G 跳到文件结尾
-![gg_G](https://github.com/tongpengfei/vimconfig/raw/master/res/gg_G.gif)
+![gg_G](res/gg_G.gif)
 
   * ctrl + f 向下翻一页
   * ctrl + b 向上翻一页
-![ctrl_f_b](https://github.com/tongpengfei/vimconfig/raw/master/res/ctrl_f_b.gif)
+![ctrl_f_b](res/ctrl_f_b.gif)
 
 * 下面说插入模式,就是打代码时候用的,
 这里我引用一下这位同学[宙斯黄](https://www.cnblogs.com/zeushuang/archive/2012/11/16/2772830.html)的教程,因为我组织了半天也不知道该怎么明白的把下面的指令说清楚,惭愧惭愧
 
   这是我常用的4个插入指令:
   * i 在光标所在字符前开始输入文字并进入插入模式
-![i](https://github.com/tongpengfei/vimconfig/raw/master/res/i.gif)
+![i](res/i.gif)
 
   * a 在光标所在字符后开始输入文字并进入插入模式
-![a](https://github.com/tongpengfei/vimconfig/raw/master/res/a.gif)
+![a](res/a.gif)
 
   * o (小写字母o) 在光标所在行的下面单独开一新行来输入文字并进入插入模式
-![o](https://github.com/tongpengfei/vimconfig/raw/master/res/o.gif)
+![o](res/o.gif)
 
   * O (大写字母O) 在光标所在行的上面单独开一新行来输入文字并进入插入模式。
-![O](https://github.com/tongpengfei/vimconfig/raw/master/res/shift_o.gif)
+![O](res/shift_o.gif)
 
   下面是经过岁月洗礼,渐渐被我遗忘的指令,如果不是写这篇文章,我可能再也想不起来插入还有下面这些指令,有兴趣的可以了解一下,因为我不怎么用,就不介绍了
   * s 删除光标所在的字符并进入插入模式
@@ -120,28 +120,28 @@ bash$ vim .
   
 * 退出插入模式,就是再回到正常模式,嗯,你猜对了就是esc,一个神奇的能让你高潮的按键,下面图中可以看到我点了o进入插入模式,写了asb然后esc退出插入模式,上下移动了光标,再点a进入了插入模式,写了asb,然后又点了esc退出插入模式,然后又上下移动了几下,强烈建议大家在看小动图的时候也新身实践一下,体验用vim写代码的快感
   * esc
-![esc](https://github.com/tongpengfei/vimconfig/raw/master/res/esc.gif)
+![esc](res/esc.gif)
 
 * 和删除相关的指令,注意使用删除指令前需要先esc退出插入模式,为方便演示,下面的指令中用到了u,即回退,比如删掉一行后想撤销删除,可以点u
   * dd 删掉一行
-![dd](https://github.com/tongpengfei/vimconfig/raw/master/res/dd.gif)
+![dd](res/dd.gif)
 
   * dw 从光标删掉单词结尾,下图中注意我在一个单词的开头和中间分别用了dw,可以看出效果的不同
-![dw](https://github.com/tongpengfei/vimconfig/raw/master/res/dw.gif)
+![dw](res/dw.gif)
  
   * D 从光标删掉到行尾
-![D](https://github.com/tongpengfei/vimconfig/raw/master/res/D.gif)
+![D](res/D.gif)
 
 * 和复制相关的指令,下面的演示中用到了粘贴指令p
 
   * yy 复制整行,下图中用到的指令是 yy + p,即可复制并粘贴整行
-![yy](https://github.com/tongpengfei/vimconfig/raw/master/res/yy.gif)
+![yy](res/yy.gif)
 
   * yw 从光标开始复制到单词的结尾,下图中用yw后用o切到了下一行并进入了插入模式,然后esc退出插入模式,再p粘贴
-![yw](https://github.com/tongpengfei/vimconfig/raw/master/res/yw.gif)
+![yw](res/yw.gif)
 
   * y$ 从光标开始复制到行尾,下图中用y$后同样用了o,最后在粘贴完后用了i,tab,tab把代码对齐
-![y_end](https://github.com/tongpengfei/vimconfig/raw/master/res/y_end.gif)
+![y_end](res/y_end.gif)
 
 * 粘帖
   * p 嗯就是把刚刚复制的文本,粘贴到光标处
@@ -149,13 +149,13 @@ bash$ vim .
 * 视图模式,这个功能中可以选中一段代码,并结合上面的光标和删除命令达到删除多行的效果.嗯,Words is cheap, show me the gif!
 
   * v 在正常模式中,按v可以进入视图模式,下面演示中用了v+移动光标hjkl,可以看到是选中代码的效果,这样就可以结合y复制,结合d删除,后面我们在动图中会一一演示
-![v](https://github.com/tongpengfei/vimconfig/raw/master/res/v.gif) 
+![v](res/v.gif) 
 
   * v+y 实现复制选中的文本,下图中用到v+l选中,y复制选中的文本,o在下行插入,esc退出插入,p粘贴,同理可以用v+j, v+k选中多行,然后复制,这个可以自己实践一下
-![vyp](https://github.com/tongpengfei/vimconfig/raw/master/res/vyp.gif) 
+![vyp](res/vyp.gif) 
 
   * v+d 实现复制删除选中的文本,下图中用到v+l选中,d删除选中的文本
-![vyd](https://github.com/tongpengfei/vimconfig/raw/master/res/vyd.gif) 
+![vyd](res/vyd.gif) 
   
   * v+e 选中从光标到单词结尾
   * v+b 选中从光标到单词开头
@@ -169,19 +169,19 @@ bash$ vim .
   从以上几个选中的指令中可以看到对移动光标的熟练程度直接影响了vim编辑的熟练度,所以当我们一开始用vim时候应该有意无意的多移动光标,当能做到光标随着眼睛动的时候基本上就练成九阳神功了.
 
   * 重点讲一下ctrl+v,表示选中一块代码,可以实现一些神奇的效果,同样上图就清楚了,下面我先用了ctrl+v，然后移动光标选中一块代码后,用了d删除选中的代码,又用u撤销删除了,其中一个细节就是每次做完一个操作后，都习惯性的用esc+:w保存了一下
-![ctrl_v](https://github.com/tongpengfei/vimconfig/raw/master/res/ctrl_v.gif)
+![ctrl_v](res/ctrl_v.gif)
 
   * 同样的ctrl+v也可以和其他移动光标的指令结合实现选中不同文本的效果,因为和上面差不多,我在这里就不一一演示了,动图已经动到吐血了.
 
 * 替换
   * r 在正常模式下(就是按esc后)输入r可以替换光标所在字符
-![r](https://github.com/tongpengfei/vimconfig/raw/master/res/r.gif)
+![r](res/r.gif)
 
   * R 替换多个字符
-![R](https://github.com/tongpengfei/vimconfig/raw/master/res/shift_r.gif)
+![R](res/shift_r.gif)
 
   * /void 搜索void, 按n跳到下一个void,shift+n跳到上一个void
-![search](https://github.com/tongpengfei/vimconfig/raw/master/res/search.gif)
+![search](res/search.gif)
 
 # 下面讲命令模式,命令模式水太深,我这里只讲我常用的几个指令,后面大家入门后可以自己根据喜好用不同的命令
   在正常模式下输入:号即进入命令模式
@@ -196,28 +196,28 @@ bash$ vim .
 
   * :set nu 显示行号
   * :set nonu 隐藏行号
-![set_nu](https://github.com/tongpengfei/vimconfig/raw/master/res/set_nu.gif)
+![set_nu](res/set_nu.gif)
 
   * :10 跳到第10行
-![go_line](https://github.com/tongpengfei/vimconfig/raw/master/res/go_line.gif)
+![go_line](res/go_line.gif)
 
   * :/10:20s/void/1234/g 把从10-20行的所有void换为1234,下图中把void换成abcd后用了u撤销替换
-![replace_lines](https://github.com/tongpengfei/vimconfig/raw/master/res/replace_lines.gif)
+![replace_lines](res/replace_lines.gif)
 
   * :/10:20s/^/\/\//g 把10-20行加上单行注释// 下图中有个细节是用/@搜过@字符用来去掉黄色高亮,因为文件中并没有@符号,自然就不显示高亮了
-![comment](https://github.com/tongpengfei/vimconfig/raw/master/res/comment.gif)
+![comment](res/comment.gif)
 
 * cope的使用
   * :cope 在下面打开一个小窗口,这里可以输出一些命令
   * 使用ctrl+w+w在两个窗口间跳转
   * :q 会退出所在窗口
-![cope_open](https://github.com/tongpengfei/vimconfig/raw/master/res/cope_open.gif)
+![cope_open](res/cope_open.gif)
 
   * 在cope中用 :make 会在这里显示make的输出
-![cope_make](https://github.com/tongpengfei/vimconfig/raw/master/res/cope_make.gif)
+![cope_make](res/cope_make.gif)
 
   * 在cope中用 :grep somewords . -rn 用来搜过 somewords,搜出来后会显示在这个小窗口，上下移动再回车会快速在定位到目标文件的目标行,非常实用,在cope窗口一样可以用/搜索文本
-![cope_grep](https://github.com/tongpengfei/vimconfig/raw/master/res/cope_grep.gif)
+![cope_grep](res/cope_grep.gif)
 
 # 嗯!掌握以上用法基本上可以满足日常需求了,最后祝大家都能享受在vim中写代码的快感.
 
