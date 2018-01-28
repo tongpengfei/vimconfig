@@ -25,7 +25,7 @@ int main( int argc, char** argv ){
 
 	Test* t = new Test("test");
 	t->debug();
-
+	
 	return 0;
 }
 
