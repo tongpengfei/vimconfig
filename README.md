@@ -95,7 +95,7 @@ bash$ vim .
 ![ctrl_f_b](res/ctrl_f_b.gif)
 
 * 下面说插入模式,就是打代码时候用的,
-![zhousihuang](https://www.cnblogs.com/zeushuang/archive/2012/11/16/2772830.html)这里我引用一下这位同学的教程,因为我组织了半天也不知道该怎么明白的把下面的指令说清楚,惭愧惭愧
+这里我引用一下这位同学[宙斯黄](https://www.cnblogs.com/zeushuang/archive/2012/11/16/2772830.html)的教程,因为我组织了半天也不知道该怎么明白的把下面的指令说清楚,惭愧惭愧
 
   这是我常用的4个插入指令:
   * i 在光标所在字符前开始输入文字并进入插入模式
