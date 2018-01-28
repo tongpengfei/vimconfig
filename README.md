@@ -171,6 +171,16 @@ bash$ vim .
 
   * 同样的ctrl+v也可以和其他移动光标的指令结合实现选中不同文本的效果,因为和上面差不多,我在这里就不一一演示了,动图已经动到吐血了.
 
+* 替换
+  * r 在正常模式下(就是按esc后)输入r可以替换光标所在字符
+![r](res/r.gif)
+
+  * R 替换多个字符
+![R](res/shift_r.gif)
+
+  * /void 搜索void, 按n跳到下一个void,shift+n跳到上一个void
+![search](res/search.gif)
+
 # 下面讲命令模式,命令模式水太深,我这里只讲我常用的几个指令,后面大家入门后可以自己根据喜好用不同的命令
   在正常模式下输入:号即进入命令模式
 
@@ -188,5 +198,24 @@ bash$ vim .
 
   * :10 跳到第10行
 ![go_line](res/go_line.gif)
+
+  * :/10:20s/void/1234/g 把从10-20行的所有void换为1234,下图中把void换成abcd后用了u撤销替换
+![replace_lines](res/replace_lines.gif)
+
+  * :/10:20s/^/\/\//g 把10-20行加上单行注释// 下图中有个细节是用/@搜过@字符用来去掉黄色高亮,因为文件中并没有@符号,自然就不显示高亮了
+![comment](res/comment.gif)
+
+* cope的使用
+  * :cope 在下面打开一个小窗口,这里可以输出一些命令
+  * 使用ctrl+w+w在两个窗口间跳转
+  * :q 会退出所在窗口
+![cope_open](res/cope_open.gif)
+
+  * 在cope中用 :make 会在这里显示make的输出
+![cope_make](res/cope_make.gif)
+
+  * 在cope中用 :grep somewords . -rn 用来搜过 somewords,搜出来后会显示在这个小窗口，上下移动再回车会快速在定位到目标文件的目标行,非常实用,在cope窗口一样可以用/搜索文本
+![cope_grep](res/cope_grep.gif)
+
 
 
