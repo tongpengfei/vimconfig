@@ -110,7 +110,7 @@ set showmatch
 "set incsearch
 
 "ctags
-"set tags=tags; 
+set tags=tags; 
 
 "ctags
 set autochdir
@@ -130,4 +130,22 @@ set autochdir
 "定义打开关闭winmanager按键
 "nmap <silent> <F8> :WMToggle<cr>
 
+nmap <C-\>f :cs find f
+nmap <C-\>s :cs find s
+
+"cs add cscope.out
+if has("cscope")
+    set csprg=/usr/local/bin/cscope
+    set csto=0
+    set cst
+    set nocsverb
+    " add any database in current directory
+    if filereadable("cscope.out")
+        cs add cscope.out
+    " else add database pointed to by environment
+    elseif $CSCOPE_DB != ""
+        cs add $CSCOPE_DB
+    endif
+    set csverb
+endif
 
