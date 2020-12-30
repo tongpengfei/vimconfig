@@ -130,9 +130,6 @@ set autochdir
 "定义打开关闭winmanager按键
 "nmap <silent> <F8> :WMToggle<cr>
 
-nmap <C-\>f :cs find f
-nmap <C-\>s :cs find s
-
 "cs add cscope.out
 if has("cscope")
     set csprg=/usr/local/bin/cscope
@@ -149,3 +146,8 @@ if has("cscope")
     set csverb
 endif
 
+hi comment ctermfg=6
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+nmap <C-p> :cs find f
+nmap <C-\> :cs find s <C-R>=expand("<cword>")<CR>
